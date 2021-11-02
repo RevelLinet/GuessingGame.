@@ -32,14 +32,15 @@ class GuessingGame {
   }
   public static boolean userWantsToPlay(Scanner scn){
     System.out.println("Do you want to play again?");
-    System.out.println();
     String userInput = scn.next().toLowerCase();
+    System.out.println();
     return userInput.substring(0, 1).equals("y");
 
   }
 
  public static void runGame(){
    System.out.println("I'm thinking of a number between 1 and 100...");
+   
    totalGames++;
 
     Scanner user    = new Scanner(System.in);
